@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var selectedDate: UIDatePicker!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -17,6 +19,8 @@ class ViewController: UIViewController {
 
     @IBAction func showLifeProgress(_ sender: Any) {
         print("ЖЕНДОС УЧИ ПРОГРАММИРОВАНИЕ")
+        let date = selectedDate.date
+        print(date)
     }
     
 }
