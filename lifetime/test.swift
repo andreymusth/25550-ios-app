@@ -1,5 +1,5 @@
 //
-//  LifetimeCalculator.swift
+//  test.swift
 //  lifetime
 //
 //  Created by Andrey on 06/08/2019.
@@ -8,7 +8,3 @@
 
 import Foundation
 
-protocol LifetimeCalculator {
-
-    func getLeftTime(birthDate: Date) -> Lifetime
-}

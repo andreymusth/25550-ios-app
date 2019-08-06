@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		553F531F22F9C2450001B0D4 /* LifetimeCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F531E22F9C2450001B0D4 /* LifetimeCalculator.swift */; };
 		553F532322F9C2D10001B0D4 /* Lifetime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F532222F9C2D10001B0D4 /* Lifetime.swift */; };
+		553F532522F9C6120001B0D4 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 553F532422F9C6120001B0D4 /* test.swift */; };
 		558013F522F8B04000FA6D7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558013F422F8B04000FA6D7A /* AppDelegate.swift */; };
 		558013F722F8B04000FA6D7A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558013F622F8B04000FA6D7A /* SceneDelegate.swift */; };
 		558013F922F8B04000FA6D7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 558013F822F8B04000FA6D7A /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		553F531E22F9C2450001B0D4 /* LifetimeCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifetimeCalculator.swift; sourceTree = "<group>"; };
 		553F532222F9C2D10001B0D4 /* Lifetime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lifetime.swift; sourceTree = "<group>"; };
+		553F532422F9C6120001B0D4 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 		558013F122F8B04000FA6D7A /* lifetime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lifetime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		558013F422F8B04000FA6D7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		558013F622F8B04000FA6D7A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				5580140222F8B04000FA6D7A /* Info.plist */,
 				553F531E22F9C2450001B0D4 /* LifetimeCalculator.swift */,
 				553F532222F9C2D10001B0D4 /* Lifetime.swift */,
+				553F532422F9C6120001B0D4 /* test.swift */,
 			);
 			path = lifetime;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				553F531F22F9C2450001B0D4 /* LifetimeCalculator.swift in Sources */,
+				553F532522F9C6120001B0D4 /* test.swift in Sources */,
 				558013F922F8B04000FA6D7A /* ViewController.swift in Sources */,
 				553F532322F9C2D10001B0D4 /* Lifetime.swift in Sources */,
 				558013F522F8B04000FA6D7A /* AppDelegate.swift in Sources */,

@@ -9,16 +9,8 @@
 import Foundation
 
 struct Lifetime {
-    
     let daysLeft: Int
     let daysLived: Int
     let daysLeftPercent: Float
     let daysLivedPercent: Float
-    
-    init(daysLeft: Int, daysLived: Int, daysLeftPercent: Float, daysLivedPercent: Float) {
-        self.daysLeft = daysLeft
-        self.daysLived = daysLived
-        self.daysLeftPercent = daysLeftPercent
-        self.daysLivedPercent = daysLivedPercent
-    }
 }
