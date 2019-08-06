@@ -9,18 +9,42 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var selectedDate: UIDatePicker!
+    
+    @IBOutlet weak var datePicker: UIDatePicker!
+    @IBOutlet weak var letsGoButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+        
         applyGradientBackground(rootView: self.view)
+        setupButton()
+        datePicker.alpha =       0
+        letsGoButton.alpha = 0
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 1.5) {
+            self.datePicker.alpha = 1.0
+        }
+        
+        UIView.animate(withDuration: 1.5, delay: 1.0, options: [], animations: {
+            self.letsGoButton.alpha = 1.0
+        }, completion: nil)
+    }
+    
+    func animateViews() {
+        
+    }
+    
+    func setupButton() {
+        letsGoButton.layer.cornerRadius = CGFloat(letsGoButton.frame.size.height / 2)
     }
     
     @IBAction func showLifeProgress(_ sender: Any) {
         print("ЖЕНДОС УЧИ ПРОГРАММИРОВАНИЕ")
-        let date = selectedDate.date
+        let date = datePicker.date
         print(date)
     }
     
