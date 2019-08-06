@@ -14,9 +14,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    
+        applyGradientBackground(rootView: self.view)
     }
-
+    
     @IBAction func showLifeProgress(_ sender: Any) {
         print("ЖЕНДОС УЧИ ПРОГРАММИРОВАНИЕ")
         let date = selectedDate.date
