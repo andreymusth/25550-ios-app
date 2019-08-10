@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+
+class MainViewController: UIViewController {
     
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var letsGoButton: UIButton!
@@ -18,7 +19,7 @@ class ViewController: UIViewController {
         
         applyGradientBackground(rootView: self.view)
         setupButton()
-        datePicker.alpha =       0
+        datePicker.alpha = 0
         letsGoButton.alpha = 0
     }
     
@@ -32,10 +33,6 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 1.5, delay: 1.0, options: [], animations: {
             self.letsGoButton.alpha = 1.0
         }, completion: nil)
-    }
-    
-    func animateViews() {
-        
     }
     
     func setupButton() {
