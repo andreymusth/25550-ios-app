@@ -24,8 +24,8 @@
                                     <color key="titleColor" red="0.58060902615651466" green="0.20569418719601429" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="showLifeProgress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1KC-MA-1ez"/>
-                                    <segue destination="prf-b4-F06" kind="show" id="6El-Om-ysE"/>
+                                    <action selector="letsGoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q67-wD-pUU"/>
+                                    <segue destination="prf-b4-F06" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6El-Om-ysE"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25550" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZk-IT-AJ4">
@@ -69,16 +69,33 @@
             <objects>
                 <viewController id="prf-b4-F06" customClass="LifeDiagramViewController" customModule="lifetime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HS0-CO-TWr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtQ-rJ-7IU">
+                                <rect key="frame" x="16" y="60" width="46" height="44"/>
+                                <state key="normal" image="SettingsButton"/>
+                                <connections>
+                                    <action selector="settingsButtonClick:" destination="prf-b4-F06" eventType="touchUpInside" id="d2G-DX-cE1"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="nPv-Cx-0D3"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GtQ-rJ-7IU" firstAttribute="top" secondItem="GTX-x9-agM" secondAttribute="top" constant="24" id="G2P-Kk-kEd"/>
+                            <constraint firstItem="GtQ-rJ-7IU" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="24" id="Npg-qp-CnJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="GTX-x9-agM"/>
                     </view>
                     <navigationItem key="navigationItem" id="5e9-Si-oQo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dj5-d9-W4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="974" y="136"/>
+            <point key="canvasLocation" x="973.91304347826099" y="135.9375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SettingsButton" width="28" height="28"/>
+    </resources>
 </document>

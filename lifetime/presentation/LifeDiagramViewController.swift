@@ -16,4 +16,7 @@ class LifeDiagramViewController: UIViewController {
         applyGradientBackground(rootView: self.view)
     }
 
+    @IBAction func settingsButtonClick(_ sender: Any) {
+       
+    }
 }

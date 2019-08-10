@@ -39,7 +39,7 @@ class MainViewController: UIViewController {
         letsGoButton.layer.cornerRadius = CGFloat(letsGoButton.frame.size.height / 2)
     }
     
-    @IBAction func showLifeProgress(_ sender: Any) {
+    @IBAction func letsGoClick(_ sender: Any) {
         print("ЖЕНДОС УЧИ ПРОГРАММИРОВАНИЕ")
         let date = datePicker.date
         print(date)
