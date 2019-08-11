@@ -11,10 +11,17 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    private let prefRepo: PreferencesRepository = PreferencesRepositoryImpl()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let vcToStart: UIViewController
+        if (prefRepo.getBirthdate() == nil) {
+            vcToStart = MainViewController()
+        } else {
+            vcToStart = LifeDiagramViewController()
+        }
+        
         return true
     }
 

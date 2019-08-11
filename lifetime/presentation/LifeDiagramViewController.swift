@@ -11,12 +11,20 @@ import UIKit
 class LifeDiagramViewController: UIViewController {
 
     @IBOutlet weak var pinImageView: UIImageView!
-    private lazy var screenWidth = UIScreen.main.bounds.width
+    @IBOutlet weak var lifelineImageVIew: UIImageView!
+    
+    var birthDate: Date? = nil
+    private lazy var prefRepo: PreferencesRepository = PreferencesRepositoryImpl()
+    private lazy var lifeTimeCalc: LifetimeCalculator = LifetimeCalculatorImpl()
+    private lazy var lifetime = lifeTimeCalc.getLeftTime(birthDate: self.birthDate!)
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         applyGradientBackground(rootView: self.view)
+        if (birthDate == nil) {
+            birthDate = prefRepo.getBirthdate()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -26,11 +34,11 @@ class LifeDiagramViewController: UIViewController {
     }
     
     private func animate() {
-        
-        let animatedWidth = screenWidth * 0.75
+        let lifelineWidth = lifelineImageVIew.bounds.width
+        let animatedWidth = Float(lifelineWidth) * lifetime.daysLivedPercent
         
         let originalTransform = self.pinImageView.transform
-        let translatedTransform = originalTransform.translatedBy(x: animatedWidth, y: 0.0)
+        let translatedTransform = originalTransform.translatedBy(x: CGFloat(animatedWidth), y: 0.0)
         UIView.animate(withDuration: 0.7, animations: {
             self.pinImageView.transform = translatedTransform
         })

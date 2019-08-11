@@ -11,6 +11,6 @@ import Foundation
 struct Lifetime {
     let daysLeft: Int
     let daysLived: Int
-    let daysLeftPercent: Float
-    let daysLivedPercent: Float
+    let daysLeftPercent: Float // 0 - 1. 25% = 0.25
+    let daysLivedPercent: Float // 0 - 1. 25% = 0.25
 }

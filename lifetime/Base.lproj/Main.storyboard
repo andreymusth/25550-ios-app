@@ -24,7 +24,6 @@
                                     <color key="titleColor" red="0.58060902615651466" green="0.20569418719601429" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="letsGoClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="q67-wD-pUU"/>
                                     <segue destination="prf-b4-F06" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6El-Om-ysE"/>
                                 </connections>
                             </button>
@@ -34,8 +33,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="3GH-24-RD0">
-                                <rect key="frame" x="30" y="369" width="355" height="159"/>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="3GH-24-RD0">
+                                <rect key="frame" x="16" y="345" width="382" height="216"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,10 +43,13 @@
                                 </userDefinedRuntimeAttributes>
                             </datePicker>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3GH-24-RD0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7F1-Du-RFf"/>
+                            <constraint firstItem="3GH-24-RD0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AYa-um-FNE"/>
                             <constraint firstItem="PZk-IT-AJ4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DM2-Vx-S6V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3GH-24-RD0" secondAttribute="trailing" constant="16" id="FaH-Hd-kuY"/>
+                            <constraint firstItem="3GH-24-RD0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cn1-Hv-bje"/>
                             <constraint firstItem="EVq-ck-jH9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="de1-98-pnl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EVq-ck-jH9" secondAttribute="bottom" constant="100" id="mT3-5k-qTK"/>
                             <constraint firstItem="PZk-IT-AJ4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="wBP-wz-HSK"/>
@@ -80,20 +82,28 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="nPv-Cx-0D3"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lifeline" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ime-K8-i4C">
+                                <rect key="frame" x="16" y="436.5" width="382" height="23"/>
+                            </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LifePin" translatesAutoresizingMaskIntoConstraints="NO" id="508-Jc-uIc">
-                                <rect key="frame" x="0.0" y="386" width="40" height="60"/>
+                                <rect key="frame" x="3" y="377" width="40" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="GtQ-rJ-7IU" firstAttribute="top" secondItem="GTX-x9-agM" secondAttribute="top" constant="24" id="G2P-Kk-kEd"/>
+                            <constraint firstItem="ime-K8-i4C" firstAttribute="centerY" secondItem="HS0-CO-TWr" secondAttribute="centerY" id="Itu-Ar-mOn"/>
                             <constraint firstItem="GtQ-rJ-7IU" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="24" id="Npg-qp-CnJ"/>
+                            <constraint firstItem="ime-K8-i4C" firstAttribute="leading" secondItem="HS0-CO-TWr" secondAttribute="leading" constant="16" id="U1r-Ca-0nq"/>
+                            <constraint firstItem="ime-K8-i4C" firstAttribute="centerX" secondItem="HS0-CO-TWr" secondAttribute="centerX" id="fbo-2y-T63"/>
+                            <constraint firstAttribute="trailing" secondItem="ime-K8-i4C" secondAttribute="trailing" constant="16" id="p6N-Eg-CMA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GTX-x9-agM"/>
                     </view>
                     <navigationItem key="navigationItem" id="5e9-Si-oQo"/>
                     <connections>
+                        <outlet property="lifelineImageVIew" destination="ime-K8-i4C" id="gBX-kC-rix"/>
                         <outlet property="pinImageView" destination="508-Jc-uIc" id="LLJ-KK-ds5"/>
                     </connections>
                 </viewController>
@@ -104,6 +114,7 @@
     </scenes>
     <resources>
         <image name="LifePin" width="51" height="81"/>
+        <image name="Lifeline" width="514.5" height="22.5"/>
         <image name="SettingsButton" width="42" height="42"/>
     </resources>
 </document>

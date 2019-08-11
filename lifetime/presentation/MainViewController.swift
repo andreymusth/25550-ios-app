@@ -39,11 +39,9 @@ class MainViewController: UIViewController {
         letsGoButton.layer.cornerRadius = CGFloat(letsGoButton.frame.size.height / 2)
     }
     
-    @IBAction func letsGoClick(_ sender: Any) {
-        print("ЖЕНДОС УЧИ ПРОГРАММИРОВАНИЕ")
-        let date = datePicker.date
-        print(date)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let second = segue.destination as! LifeDiagramViewController
+        second.birthDate = datePicker.date
     }
-    
 }
 
