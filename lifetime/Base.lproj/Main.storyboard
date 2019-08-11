@@ -21,7 +21,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="5" maxX="40" maxY="5"/>
                                 <state key="normal" title="let's go">
-                                    <color key="titleColor" red="0.58060902615651466" green="0.20569418719601429" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.44754904508590698" green="0.11715687066316605" blue="0.79362750053405762" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="prf-b4-F06" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="6El-Om-ysE"/>
@@ -30,7 +30,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25550" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZk-IT-AJ4">
                                 <rect key="frame" x="165" y="176" width="84" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="3GH-24-RD0">
@@ -42,17 +42,35 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="highlightsToday" value="NO"/>
                                 </userDefinedRuntimeAttributes>
                             </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enter your date of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ0-JD-qmQ">
+                                <rect key="frame" x="108" y="314" width="198" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-AF-hpd">
+                                <rect key="frame" x="132" y="144" width="150" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="3GH-24-RD0" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="7F1-Du-RFf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GPj-AF-hpd" secondAttribute="trailing" constant="132" id="7cB-Nj-Pse"/>
                             <constraint firstItem="3GH-24-RD0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="AYa-um-FNE"/>
                             <constraint firstItem="PZk-IT-AJ4" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DM2-Vx-S6V"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3GH-24-RD0" secondAttribute="trailing" constant="16" id="FaH-Hd-kuY"/>
+                            <constraint firstItem="GPj-AF-hpd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="132" id="bxk-bR-lYo"/>
                             <constraint firstItem="3GH-24-RD0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cn1-Hv-bje"/>
+                            <constraint firstItem="NQ0-JD-qmQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="270" id="cwT-MK-z9s"/>
+                            <constraint firstItem="NQ0-JD-qmQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="108" id="dBd-JJ-PzO"/>
+                            <constraint firstItem="GPj-AF-hpd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="dct-7M-2z1"/>
                             <constraint firstItem="EVq-ck-jH9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="de1-98-pnl"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EVq-ck-jH9" secondAttribute="bottom" constant="100" id="mT3-5k-qTK"/>
                             <constraint firstItem="PZk-IT-AJ4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="wBP-wz-HSK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NQ0-JD-qmQ" secondAttribute="trailing" constant="108" id="x97-a0-Sqn"/>
                             <constraint firstItem="3GH-24-RD0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xvh-5u-UMW"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
