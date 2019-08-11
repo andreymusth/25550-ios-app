@@ -12,3 +12,6 @@ protocol LifetimeCalculator {
 
     func getLeftTime(birthDate: Date) -> Lifetime
 }
+
+
+//comments
