@@ -11,6 +11,7 @@ import UIKit
 class LifeDiagramViewController: UIViewController {
 
     @IBOutlet weak var pinImageView: UIImageView!
+    private lazy var screenWidth = UIScreen.main.bounds.width
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,14 +26,17 @@ class LifeDiagramViewController: UIViewController {
     }
     
     private func animate() {
+        
+        let animatedWidth = screenWidth * 0.75
+        
         let originalTransform = self.pinImageView.transform
-        let translatedTransform = originalTransform.translatedBy(x: 0.0, y: -250.0)
+        let translatedTransform = originalTransform.translatedBy(x: animatedWidth, y: 0.0)
         UIView.animate(withDuration: 0.7, animations: {
             self.pinImageView.transform = translatedTransform
         })
     }
 
     @IBAction func settingsButtonClick(_ sender: Any) {
-       dismiss(animated: false, completion: nil)
+       
     }
 }
