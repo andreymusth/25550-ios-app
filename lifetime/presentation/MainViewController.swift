@@ -23,10 +23,6 @@ class MainViewController: UIViewController {
         letsGoButton.alpha = 0
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return.lightContent
-    }
-    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
