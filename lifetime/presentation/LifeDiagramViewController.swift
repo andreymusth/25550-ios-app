@@ -18,6 +18,10 @@ class LifeDiagramViewController: UIViewController {
     private lazy var lifeTimeCalc: LifetimeCalculator = LifetimeCalculatorImpl()
     private lazy var lifetime = lifeTimeCalc.getLeftTime(birthDate: self.birthDate!)
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
