@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14854.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14806.4"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="lifetime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EVq-ck-jH9">
-                                <rect key="frame" x="89.5" y="691" width="235" height="71"/>
+                                <rect key="frame" x="70" y="607" width="235" height="71"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="51"/>
                                 <inset key="contentEdgeInsets" minX="40" minY="5" maxX="40" maxY="5"/>
@@ -28,13 +28,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25550" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PZk-IT-AJ4">
-                                <rect key="frame" x="165" y="182" width="84" height="34"/>
+                                <rect key="frame" x="145.66666666666666" y="182" width="84" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="3GH-24-RD0">
-                                <rect key="frame" x="16" y="345" width="382" height="216"/>
+                                <rect key="frame" x="16" y="303" width="343" height="216"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="textColor">
                                         <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,13 +43,13 @@
                                 </userDefinedRuntimeAttributes>
                             </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enter your date of birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NQ0-JD-qmQ">
-                                <rect key="frame" x="108" y="314" width="198" height="24"/>
+                                <rect key="frame" x="108" y="272" width="159" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPj-AF-hpd">
-                                <rect key="frame" x="132" y="144" width="150" height="34"/>
+                                <rect key="frame" x="132" y="144" width="111" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -89,7 +89,7 @@
             <objects>
                 <viewController id="prf-b4-F06" customClass="LifeDiagramViewController" customModule="lifetime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HS0-CO-TWr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtQ-rJ-7IU">
@@ -101,21 +101,54 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lifeline" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ime-K8-i4C">
-                                <rect key="frame" x="16" y="436.5" width="382" height="23"/>
+                                <rect key="frame" x="16" y="396" width="343" height="20"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LifePin" translatesAutoresizingMaskIntoConstraints="NO" id="508-Jc-uIc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LifePin" translatesAutoresizingMaskIntoConstraints="NO" id="508-Jc-uIc">
                                 <rect key="frame" x="3" y="377" width="40" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and 9114 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2J-Tw-Zaa">
+                                <rect key="frame" x="165" y="184" width="157" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="64,775%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oiR-n2-HNv">
+                                <rect key="frame" x="50" y="608" width="100" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16436 days left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KUx-61-n9Q">
+                                <rect key="frame" x="50" y="648" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35,225%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aiw-13-ER8">
+                                <rect key="frame" x="224" y="144" width="101" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="U2J-Tw-Zaa" firstAttribute="top" secondItem="aiw-13-ER8" secondAttribute="bottom" constant="10" id="C5X-aH-Q9T"/>
+                            <constraint firstItem="KUx-61-n9Q" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="50" id="DuO-Ie-r99"/>
                             <constraint firstItem="GtQ-rJ-7IU" firstAttribute="top" secondItem="GTX-x9-agM" secondAttribute="top" constant="24" id="G2P-Kk-kEd"/>
                             <constraint firstItem="ime-K8-i4C" firstAttribute="centerY" secondItem="HS0-CO-TWr" secondAttribute="centerY" id="Itu-Ar-mOn"/>
                             <constraint firstItem="GtQ-rJ-7IU" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="24" id="Npg-qp-CnJ"/>
+                            <constraint firstItem="oiR-n2-HNv" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="50" id="O9n-ox-d6x"/>
                             <constraint firstItem="ime-K8-i4C" firstAttribute="leading" secondItem="HS0-CO-TWr" secondAttribute="leading" constant="16" id="U1r-Ca-0nq"/>
+                            <constraint firstItem="KUx-61-n9Q" firstAttribute="top" secondItem="oiR-n2-HNv" secondAttribute="bottom" constant="10" id="crc-6s-K6K"/>
                             <constraint firstItem="ime-K8-i4C" firstAttribute="centerX" secondItem="HS0-CO-TWr" secondAttribute="centerX" id="fbo-2y-T63"/>
+                            <constraint firstItem="GTX-x9-agM" firstAttribute="trailing" secondItem="aiw-13-ER8" secondAttribute="trailing" constant="50" id="ihY-7j-VS7"/>
+                            <constraint firstItem="ime-K8-i4C" firstAttribute="top" secondItem="508-Jc-uIc" secondAttribute="bottom" constant="-0.5" id="lHU-aF-z8e"/>
                             <constraint firstAttribute="trailing" secondItem="ime-K8-i4C" secondAttribute="trailing" constant="16" id="p6N-Eg-CMA"/>
+                            <constraint firstItem="GTX-x9-agM" firstAttribute="bottom" secondItem="KUx-61-n9Q" secondAttribute="bottom" constant="100" id="qV2-3k-J41"/>
+                            <constraint firstItem="ime-K8-i4C" firstAttribute="leading" secondItem="508-Jc-uIc" secondAttribute="trailing" constant="-27" id="tlV-Wg-1DP"/>
+                            <constraint firstItem="aiw-13-ER8" firstAttribute="top" secondItem="GTX-x9-agM" secondAttribute="top" constant="100" id="tpD-y2-HJ6"/>
+                            <constraint firstItem="GTX-x9-agM" firstAttribute="trailing" secondItem="U2J-Tw-Zaa" secondAttribute="trailing" constant="53" id="xWM-dr-zz1"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GTX-x9-agM"/>
                     </view>
@@ -131,8 +164,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LifePin" width="51" height="81"/>
-        <image name="Lifeline" width="514.5" height="22.5"/>
-        <image name="SettingsButton" width="42" height="42"/>
+        <image name="LifePin" width="45.333332061767578" height="72"/>
+        <image name="Lifeline" width="457.33334350585938" height="20"/>
+        <image name="SettingsButton" width="37.333332061767578" height="37.333332061767578"/>
     </resources>
 </document>
