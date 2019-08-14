@@ -103,52 +103,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lifeline" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ime-K8-i4C">
                                 <rect key="frame" x="16" y="436.5" width="382" height="23"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LifePin" translatesAutoresizingMaskIntoConstraints="NO" id="508-Jc-uIc">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="LifePin" translatesAutoresizingMaskIntoConstraints="NO" id="508-Jc-uIc">
                                 <rect key="frame" x="3" y="377" width="40" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="35,225%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYR-cS-hDc">
-                                <rect key="frame" x="291" y="151" width="93" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="64,775% and " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRW-Ng-lv9">
-                                <rect key="frame" x="30" y="681" width="139.5" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16436 days left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wlG-5Z-HpO">
-                                <rect key="frame" x="30" y="718.5" width="156.5" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and 9114 days left" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9dE-xE-Ek0">
-                                <rect key="frame" x="202.5" y="188.5" width="181.5" height="27.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wYR-cS-hDc" firstAttribute="top" secondItem="GTX-x9-agM" secondAttribute="top" constant="107" id="7NK-pg-Frz"/>
                             <constraint firstItem="GtQ-rJ-7IU" firstAttribute="top" secondItem="GTX-x9-agM" secondAttribute="top" constant="24" id="G2P-Kk-kEd"/>
-                            <constraint firstItem="dRW-Ng-lv9" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="30" id="GMT-Eu-SUM"/>
-                            <constraint firstItem="ime-K8-i4C" firstAttribute="top" secondItem="508-Jc-uIc" secondAttribute="bottom" constant="-0.5" id="Gob-JP-tMF"/>
                             <constraint firstItem="ime-K8-i4C" firstAttribute="centerY" secondItem="HS0-CO-TWr" secondAttribute="centerY" id="Itu-Ar-mOn"/>
                             <constraint firstItem="GtQ-rJ-7IU" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="24" id="Npg-qp-CnJ"/>
-                            <constraint firstItem="GTX-x9-agM" firstAttribute="trailing" secondItem="9dE-xE-Ek0" secondAttribute="trailing" constant="30" id="Owx-3u-aAN"/>
                             <constraint firstItem="ime-K8-i4C" firstAttribute="leading" secondItem="HS0-CO-TWr" secondAttribute="leading" constant="16" id="U1r-Ca-0nq"/>
-                            <constraint firstItem="9dE-xE-Ek0" firstAttribute="top" secondItem="wYR-cS-hDc" secondAttribute="bottom" constant="10" id="Wcd-1o-JMa"/>
-                            <constraint firstItem="ime-K8-i4C" firstAttribute="leading" secondItem="508-Jc-uIc" secondAttribute="trailing" constant="-27" id="aM1-tb-fAO"/>
                             <constraint firstItem="ime-K8-i4C" firstAttribute="centerX" secondItem="HS0-CO-TWr" secondAttribute="centerX" id="fbo-2y-T63"/>
-                            <constraint firstItem="wlG-5Z-HpO" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="30" id="kId-ue-ptv"/>
-                            <constraint firstItem="wlG-5Z-HpO" firstAttribute="top" secondItem="dRW-Ng-lv9" secondAttribute="bottom" constant="10" id="oeA-a4-diH"/>
-                            <constraint firstItem="GTX-x9-agM" firstAttribute="trailing" secondItem="wYR-cS-hDc" secondAttribute="trailing" constant="30" id="ozF-CO-xzl"/>
                             <constraint firstAttribute="trailing" secondItem="ime-K8-i4C" secondAttribute="trailing" constant="16" id="p6N-Eg-CMA"/>
-                            <constraint firstItem="GTX-x9-agM" firstAttribute="bottom" secondItem="wlG-5Z-HpO" secondAttribute="bottom" constant="116" id="q7x-SS-WUA"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GTX-x9-agM"/>
                     </view>
