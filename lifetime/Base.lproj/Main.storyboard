@@ -103,9 +103,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Lifeline" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ime-K8-i4C">
                                 <rect key="frame" x="16" y="396" width="343" height="20"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LifePin" translatesAutoresizingMaskIntoConstraints="NO" id="508-Jc-uIc">
-                                <rect key="frame" x="3" y="377" width="40" height="60"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="and 9114 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2J-Tw-Zaa">
                                 <rect key="frame" x="165" y="184" width="157" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -130,6 +127,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="LifePin" translatesAutoresizingMaskIntoConstraints="NO" id="508-Jc-uIc">
+                                <rect key="frame" x="7" y="347" width="30" height="46"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -140,6 +140,7 @@
                             <constraint firstItem="GtQ-rJ-7IU" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="24" id="Npg-qp-CnJ"/>
                             <constraint firstItem="oiR-n2-HNv" firstAttribute="leading" secondItem="GTX-x9-agM" secondAttribute="leading" constant="50" id="O9n-ox-d6x"/>
                             <constraint firstItem="ime-K8-i4C" firstAttribute="leading" secondItem="HS0-CO-TWr" secondAttribute="leading" constant="16" id="U1r-Ca-0nq"/>
+                            <constraint firstItem="ime-K8-i4C" firstAttribute="top" secondItem="508-Jc-uIc" secondAttribute="bottom" constant="2" id="W7B-Ac-Te7"/>
                             <constraint firstItem="KUx-61-n9Q" firstAttribute="top" secondItem="oiR-n2-HNv" secondAttribute="bottom" constant="10" id="crc-6s-K6K"/>
                             <constraint firstItem="ime-K8-i4C" firstAttribute="centerX" secondItem="HS0-CO-TWr" secondAttribute="centerX" id="fbo-2y-T63"/>
                             <constraint firstItem="GTX-x9-agM" firstAttribute="trailing" secondItem="aiw-13-ER8" secondAttribute="trailing" constant="50" id="ihY-7j-VS7"/>
@@ -160,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dj5-d9-W4h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="973.91304347826099" y="135.9375"/>
+            <point key="canvasLocation" x="973.60000000000002" y="135.22167487684729"/>
         </scene>
     </scenes>
     <resources>
