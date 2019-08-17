@@ -155,7 +155,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="5e9-Si-oQo"/>
                     <connections>
+                        <outlet property="leftDays" destination="KUx-61-n9Q" id="nNT-vm-Rg4"/>
+                        <outlet property="leftDaysPercent" destination="oiR-n2-HNv" id="H8D-sa-Wzk"/>
                         <outlet property="lifelineImageVIew" destination="ime-K8-i4C" id="gBX-kC-rix"/>
+                        <outlet property="livedDays" destination="U2J-Tw-Zaa" id="sfl-qb-lmm"/>
+                        <outlet property="livedDaysPercent" destination="aiw-13-ER8" id="bNZ-EL-GK8"/>
                         <outlet property="pinImageView" destination="508-Jc-uIc" id="LLJ-KK-ds5"/>
                     </connections>
                 </viewController>

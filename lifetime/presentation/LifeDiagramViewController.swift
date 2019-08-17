@@ -13,6 +13,11 @@ class LifeDiagramViewController: UIViewController {
     @IBOutlet weak var pinImageView: UIImageView!
     @IBOutlet weak var lifelineImageVIew: UIImageView!
     
+    @IBOutlet weak var livedDaysPercent: UILabel!
+    @IBOutlet weak var livedDays: UILabel!
+    @IBOutlet weak var leftDaysPercent: UILabel!
+    @IBOutlet weak var leftDays: UILabel!
+    
     var birthDate: Date? = nil
     private lazy var prefRepo: PreferencesRepository = PreferencesRepositoryImpl()
     private lazy var lifeTimeCalc: LifetimeCalculator = LifetimeCalculatorImpl()
